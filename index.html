@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot</title>
+    <style>
+        /* Estilos para centralizar o botão na página */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+        df-messenger {
+      --df-messenger-bot-message: #bdc1cf;
+      --df-messenger-button-titlebar-color: #04720d;
+      --df-messenger-chat-background-color: #fafafa;
+      --df-messenger-font-color: rgb(29, 26, 26);
+      --df-messenger-send-icon: #afb2b8;
+      --df-messenger-user-message: #b9bcc2;
+      --df-messenger-input-font-color: black;
+      --df-messenger-input-placeholder-font-color: white;
+    }
+    df-messenger .df-chat-icon {
+    animation: rotate 4s linear infinite;
+  }
+
+  /* Define a animação de rotação */
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+    </style>
+</head>
+<body>
+    <button>Click Me!</button>
+
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="MegaSender"
+    agent-id="0b9a4b48-8e46-4eb0-a278-55f2a116764f"
+    language-code="pt-br"
+ 
+    chat-icon="assets/images/robot.gif"
+  ></df-messenger>
+  
+
+</body>
+</html>
